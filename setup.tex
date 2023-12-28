@@ -1,0 +1,48 @@
+%\usepackage{deluxetable}
+%\usepackage{bibunits} %% bibunits.sty allows references at the end of each chapter
+
+%\def\hsp{\def\baselinestretch{1.5}\normalsize} % intermediate spacing
+
+\bibpunct{(}{)}{;}{a}{}{,}
+\newcommand{\bmath}{\boldmath}
+\usepackage{epstopdf}
+\usepackage{epsfig}
+\usepackage{aasmod}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{rotating}
+\usepackage{verbatim}
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{color}
+\usepackage{fltpage}
+\usepackage{url}
+\usepackage{rotating}
+\usepackage[innercaption]{sidecap}
+\usepackage{pdfpages}
+\usepackage{xspace}
+
+%this block is new from Greg S to accommodate change in 2013 format requiring page numbers be centered on every page
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\it{\leftmark}}
+\rhead{}
+\chead{}
+\cfoot{\thepage}
+\lfoot{}
+\rfoot{} 
+\renewcommand{\headrulewidth}{0.0pt}
+
+%\usepackage{apjfonts}
+
+%% makes \subfloat command put (a), (b), ... labels at top of subfigure instead of bottom
+\captionsetup[subfigure]{position=top,font=bf,captionskip=0pt,topadjust=0pt,farskip=0pt}
+
+%\pagestyle{headings}
+%\pagestyle{myheadings}
+% could also have pagestyle{myheadings}
+% problem w/ default headings is that they're
+% a bit too wide for the page (the chapter titles are too long!)
