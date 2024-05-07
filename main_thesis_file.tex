@@ -4,7 +4,7 @@
 %EDITED SLIGHTLY AND UPLOADED TO OVERLEAF BY BEN COOK (bacook17@gmail.com)
 
 % use "plain" for committee to read, or for printing single-spaced in general
-\documentclass[plain]{hvdthesis}
+\documentclass[twoside]{hvdthesis}
 
 % use "bound" for submitting to Harvard 
 %\documentclass[bound]{hvdthesis}
@@ -56,12 +56,24 @@ Page left intentionally blank.
 \clearpage
 
 	%% List of Figures
-%\addcontentsline{toc}{chapter}{List of Figures}
-%\listoffigures
-%\newpage
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\newpage
 	%% List of Tables
-%\addcontentsline{toc}{chapter}{List of Tables}
-%\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+\newpage
+
+\thispagestyle{plain}
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\chaptermark{List of Abbreviations}
+\vskip 0.5cm
+{\centerline {\Large \bf List of Abbreviations}}
+\vskip 0.5cm
+\normalsize
+
+\input{abbr.tex}
 
 \newpage
 	%% Acknowledgments
@@ -168,7 +180,7 @@ Page left intentionally blank.
 {authors,
 {\em journal reference info}}
 \end{quote}
-\input{./chapter7/ms.tex}
+\input{./chapter8/ms.tex}
 \clearpage
 %
 
