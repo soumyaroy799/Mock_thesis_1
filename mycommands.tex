@@ -76,6 +76,9 @@
 \usepackage{accsupp} %For non-copyable line numbers
 \usepackage{nicefrac}
 \usepackage{dsfont}
+\usepackage{romannum}
+\usepackage{xfrac}
+\usepackage{ragged2e}
 
 \usepackage{titlesec}
 %\titleformat{\section}https://www.overleaf.com/project/60ee83c9e199e57c09f31d5b
@@ -90,3 +93,8 @@
 
 \newlist{abbrv}{itemize}{1}
 \setlist[abbrv,1]{label=,labelwidth=1in,align=parleft,itemsep=0.1\baselineskip,leftmargin=!}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{io} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, text width=4cm, fill=cyan!30]
+\tikzstyle{arrow} = [ultra thick,red,->,>=stealth]

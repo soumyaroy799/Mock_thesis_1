@@ -148,6 +148,8 @@
 \renewcommand*{\year}[1]{\def\thyear{#1}}
 \newcommand*{\advisor}[1]{\def\thadvisor{#1}}
 
+\graphicspath{{./}{Figures/}}
+
 %
 % Writing the boiler plate
 %
@@ -160,6 +162,13 @@
   \hbox{ }
   \vspace{-2.0cm}
   \begin{center}
+  %%%%%%%%%%%%%%
+  \includegraphics[width=0.2\textwidth]{IUCAA-logo.png}
+  \vskip 0.6cm minus 0.2cm
+  %%%%%%%%%%%%%%
+  The Inter-University Center for Astronomy and Astrophysics \par
+  Post Bag 4, Ganeshkhind, Pune, 411007, India
+  \vskip 0.4cm minus 0.2cm
   {\Large \textbf \thtitle \setlength{\baselineskip}{36pt plus 3pt minus 6pt}\par}
   \vskip 0.8cm minus 0.2cm
   \normalsize
@@ -168,21 +177,23 @@
   by 
   \vskip 0.2cm minus 0.2cm
   {\Large \thauthor \par}
+  {\Large Supervisor: \thadvisor \par}
   \normalsize
-  \vskip 0.4cm minus 0.2cm
+  \vskip 0.2cm minus 0.2cm
   to \par
+  %%%%%%%%%%%%%%
+  \includegraphics[width=0.1\textwidth]{JNU-logo.png}
+  \vskip 0.4cm minus 0.2cm
+  %%%%%%%%%%%%%%
   \vskip 0.4cm minus 0.2cm
   The \thdept \par
   \setlength{\baselineskip}{24pt minus 6pt}
   in partial fulfillment of the requirements \par
   for the degree of \par
   Doctor of Philosophy \par
-  in the subject of \par
-  \thsub
-  \vskip 0.8cm minus 0.2cm
-  The Inter-University Center for Astronomy and Astrophysics \par
-  Pune, India
-  \vskip 0.4cm minus 0.2cm
+  %in the subject of \par
+  %\thsub
+  %\vskip 0.4cm minus 0.2cm
   \thmonth{} \thyear
   \end{center}
   \singlespace
@@ -214,7 +225,7 @@
 \newcommand{\abstract}[1]{
    \addcontentsline{toc}{chapter}{Abstract}
    \doublespace
-   \noindent Dissertation Advisor: 
+   \noindent Dissertation Supervisor: 
       \thadvisor 
       \hfill
       \thauthor 
