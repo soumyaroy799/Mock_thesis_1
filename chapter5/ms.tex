@@ -96,7 +96,7 @@ Fig.\ref{flare_m_aia} presents the same region as depicted in Fig.\ref{flare_m_e
 %%%--------------
 \begin{figure*}[ht!]
     \begin{center}
-        \includegraphics[trim={4.5cm 5.5cm 6cm 4cm},clip,width=0.9\textwidth]{Figures/nov_flare_aia_waves_2.pdf}
+        \includegraphics[trim={4.5cm 5.5cm 6cm 4cm},clip,width=\textwidth]{Figures/nov_flare_aia_waves_2.pdf}
     \end{center}
     \caption{The Nov 4th, 2015 flare in the six Coronal channels of the SDO/AIA at the soft X-ray peak (panels (a)-(f)) and during the decline phase (panels (g)-(l)) of the flare.}
     \label{flare_m_aia}
@@ -107,17 +107,18 @@ We begin by aligning the HMI observations with the IRIS observations using the 1
 
 Initially, we align the AIA 1600~{\AA} observation with the HMI observation closest in time to the IRIS SJI (Slit-Jaw Imager) and raster observations. Using the `aia\_prep' tool available in the \textit{sswidl} distribution, we process the level 1 images to perform image registration and align AIA and HMI observations. Subsequently, we calculate the shift between AIA 1600~{\AA} and the SJI 1400~{\AA}. Using these calculated offsets, we co-align the magnetograms with the IRIS SJI 1400~{\AA} observations, given that the AIA 1600~{\AA} observation was already aligned with the HMI observations. We typically observe an offset of approximately $\sim$ 1.5\arcsec~between HMI and IRIS. These co-aligned HMI maps are then utilized to derive the rastered magnetograms, which can be directly compared with IRIS raster observations.
 
-For analyzing the properties of the  \ion{Mg}{2} lines, we fit a double Gaussian profile to both the k and h lines with a linear background symmetric about the line core. If excess emission is detected compared to the fitted background and line profile for wavelengths lower than 2792~{\AA} and in-between 2798~{\AA} to 2800~{\AA}, we infer the presence of  \ion{Mg}{2} triplets in emission. A single Gaussian profile is fitted to the excess emission. It's important to note that this approach may overlook the triplets unless the emission is sufficiently strong. However, this method serves our purpose since our primary objective is to characterize the  \ion{Mg}{2} k and h line profiles.
-
-Additionally, we exclude any pixels showing saturation in either of the lines. The uncertainty of the observed intensities is measured in DN (Data Numbers) using the method outlined in \S 2:1 of \cite{kerr15} and subsequently applied in the fitting procedure. The uncertainties of the fitted Gaussian profiles are incorporated while integrating the profile to obtain the uncertainty of the line intensities.
-
 %%%%-------------------------
-\begin{figure}[h!]
+\begin{figure}[ht!]
 \centering  
-\includegraphics[trim={7cm 5cm 6cm 10cm},width=0.8\textwidth]{Figures/m_flare_iris.pdf}
+\vspace{10cm}
+\includegraphics[trim={7cm 5cm 6cm 15cm},width=0.7\textwidth]{Figures/m_flare_iris.pdf}
 \caption{Obtained images in  \ion{Mg}{2} h (panel a) and k (panel b) and corresponding co-aligned and artificially rastered HMI LOS magnetic field map (panel c) for the M3.7 flare observed on November 4th, 2015. The magenta and lime green contours on panel c show the contours of  \ion{Mg}{2}~h (panel a) and k (panel b) intensity.} \label{fig:aligned_raster}
 \end{figure}
 %%%%-------------------------
+
+For analyzing the properties of the  \ion{Mg}{2} lines, we fit a double Gaussian profile to both the k and h lines with a linear background symmetric about the line core. If excess emission is detected compared to the fitted background and line profile for wavelengths lower than 2792~{\AA} and in-between 2798~{\AA} to 2800~{\AA}, we infer the presence of  \ion{Mg}{2} triplets in emission. A single Gaussian profile is fitted to the excess emission. It's important to note that this approach may overlook the triplets unless the emission is sufficiently strong. However, this method serves our purpose since our primary objective is to characterize the  \ion{Mg}{2} k and h line profiles.
+
+Additionally, we exclude any pixels showing saturation in either of the lines. The uncertainty of the observed intensities is measured in DN (Data Numbers) using the method outlined in \S2.1 of \cite{kerr15} and subsequently applied in the fitting procedure. The uncertainties of the fitted Gaussian profiles are incorporated while integrating the profile to obtain the uncertainty of the line intensities.
 
 %%%%%%%%%%%
 \begin{figure*}[ht!]
@@ -137,7 +138,7 @@ Additionally, we exclude any pixels showing saturation in either of the lines. T
 \end{figure}
 %%%%-------------------------
 
-In Figure~\ref{fig:aligned_raster}, we present intensity maps obtained in  \ion{Mg}{2} h \& k (panels a \& b) alongside the rastered line-of-sight (LOS) magnetic field map in panel (c). The dashed magenta and solid green contours on the magnetic field maps represent the intensity from panels a and b, respectively. To investigate the  \ion{Mg}{2} k to h intensity line ratios over time, we selected two pixels—one in the northern ribbon and another in the southern ribbon, as indicated by crosses. Fig.\ref{fig:pix_fit_ribbon} displays the spectra overlaid with fits for the two pixels taken in the northern ribbon (top panel) and southern ribbon (bottom panel) obtained at different times.
+In Figure~\ref{fig:aligned_raster}, we present intensity maps obtained in  \ion{Mg}{2} h \& k (panels a \& b) alongside the rastered line-of-sight (LOS) magnetic field map in panel (c). The dashed magenta and solid green contours on the magnetic field maps represent the intensity from panels a and b, respectively. To investigate the  \ion{Mg}{2} k to h intensity line ratios over time, we selected two pixels—one in the northern ribbon and another in the southern ribbon, as indicated by crosses. Fig.~\ref{fig:pix_fit_ribbon} displays the spectra overlaid with fits for the two pixels taken in the northern ribbon (top panel) and southern ribbon (bottom panel) obtained at different times.
 
 We illustrate the  \ion{Mg}{2} k to h line intensity ratio derived from the two locations in the northern (black) and southern ribbons (green) in Fig.\ref{fig:aligned_iris_ratio}. Additionally, we overlay the GOES light curve of the flare obtained in 1.0{--}8.0{\AA} (red solid line). Our observations indicate that the intensity ratios exhibit a slightly increasing trend, albeit within the margin of errors, during the early phase of the flare. The ratio demonstrates a distinct peak around the midpoint of the impulsive phase, lasting for a very brief duration of approximately 150 seconds, before beginning to decrease. It's worth emphasizing that the pixel-by-pixel fitting of the  \ion{Mg}{2} h \& k line profiles provided a sufficient signature of the time evolution of the k/h line intensity ratio during the flare.
 
@@ -188,12 +189,12 @@ To explore further, we study the evolution of k to h intensity ratio as a functi
 An X~1.6 flare occurred on October 22, 2014, observed in AR 12192. The flare commenced at 14:02 UT and peaked at 14:28 UT as observed by GOES. Fig.\ref{flare2}(a) illustrates the GOES flux plot of the flare in the 0.5{--}4~{\AA} range (blue) and the 1.0{--}8.0~{\AA} range (red). Figs.\ref{flare2}(b) \& (c) display an AIA 1600{\AA} image and the line-of-sight (LOS) magnetic flux density map obtained from HMI, respectively. The overlaid boxes in panels (b) and (c) indicate the IRIS SJI (Slit-Jaw Imager) field of view (FOV). IRIS observed this flare with a large 8-step coarse raster covering a FOV of [14\arcsec,174\arcsec]. It's worth noting that the IRIS SJI FOV and the slit direction were rotated by approximately 45$^\circ$ relative to the center of the HMI observation.
 
 %%--------------------------------------------------
-\begin{figure*}[ht!]
+\begin{figure}[ht!]
     \centering
 \hspace*{-.5in}
 \includegraphics[width=\textwidth,trim={7cm 5cm 7.7cm 6cm},clip]{Figures/Flare_X_oct22_2014_2.eps}
 \caption{The X class flare observed on October 22, 2014. Panel a: GOES flux plot in 0.5{--}4~{\AA} (blue) and 1.0{--}8.0~{\AA} (red). Panel b: AIA 1600~{\AA} image taken at the peak of the flare. Arrows locate the primary and secondary ribbons. Panel c: LOS magnetic flux density map obtained from HMI at the peak of the flare. The over-plotted white (black) box in panel b (c) represents the IRIS SJI FOV, and white dot-dashed (dashed) box in panels b (c) represents the IRIS Raster FOV.}\label{flare2}
-\end{figure*}
+\end{figure}
 %%--------------------------------------------------
 
 The flare manifests two ribbons in AIA 1600{\AA}, as indicated by the arrows. The eastern ribbon extends around a negative field region and is entirely covered by the IRIS SJI FOV. Conversely, the western ribbon extends around a positive field region, with only a portion of it covered by the IRIS SJI FOV, as depicted in panel (b). In Fig.~\ref{fig:align_raster_flare2}, we present intensity maps obtained in  \ion{Mg}{2} h \& k (panels a \& b) alongside the rastered line-of-sight (LOS) magnetic field map (panel c). The black \& green dashed contours in the LOS magnetic field map (panel c) indicate the intensity contours of  \ion{Mg}{2} h \& k (panels a \& b).

@@ -37,12 +37,12 @@ We investigate the two flares using EUV imaging from multiple instruments, inclu
 The positions of various spacecraft relative to the flares' locations on the solar disk are illustrated in Figure \ref{fig:sc_pos}. Panel (a) displays the AIA 193 Å observation of the Oct 28, 2021 flare projected onto Heliographic Stonyhurst (HGS) coordinates, with the positions of SDO (magenta cross), SO (cyan circle), and STEREO-A (green triangle) marked with respect to the flare location. The flare is delineated by a white dotted circle. The relative separations between the spacecraft indicate differences in polar and azimuthal angles due to varying vantage points. Panel (b) presents the spacecraft positions projected onto the Heliocentric Inertial (HCI) frame for the same event, demonstrating differences in azimuthal angle and distance from the Sun's center. Similar plots for the Nov 29, 2021 flare are depicted in Panels (c) and (d), with EUVI 171 Å emission projected onto HGS and HCI coordinates, respectively.
 
 %%%%######%%%%%%
-\begin{figure*}[ht!]
+\begin{figure}[ht!]
     \centering
     \includegraphics[trim={1cm 0.5cm 1.2cm 0.5cm},clip,width=\textwidth]{flare_pos.pdf}
     \caption{Position of various instruments during the flares. Panel a: AIA 193 {\AA} observation during the 2021 Oct 28 event projected to Heliographic Stonyhurst (HGS) coordinates. The position of the flare is marked with a white dotted circle. The positions of {\it Solar Orbiter}, {\it SDO} and {\it STEREO-A} are marked with an olive circle, magenta cross and green triangle, respectively. The positions of the spacecraft signify the difference in both the polar (vertical axis) and the azimuthal (horizontal axis) angle and do not mark the connectivity of the spacecraft to the solar surface. Panel b: The positions of the spacecrafts projected onto the Heliocentric Intertial (HCI) frame for the 2021 Oct 28 event. The difference between the spacecraft show the difference in the azimuthal angle. Panel c: {\it STEREO-A}/EUVI 171 {\AA} observation during the 2020 Nov 29 event projected to HGS coordinates. The position of the flare is marked with a white dotted circle. The positions of {\it SDO} and {\it STEREO-A} are marked with a magenta cross and green triangle, respectively. Panel d: The positions of the spacecraft projected onto the HCI frame for the 2020 Nov 29 event.}
     \label{fig:sc_pos}
-\end{figure*}
+\end{figure}
 %%%%######%%%%%%
 
 The X1 flare occurred on Oct 28, 2021 (SOL2021-10-28T15:35) near approximately $\sim~[0\arcsec,-500\arcsec]$ solar coordinates as observed from AIA. It was captured by SDO/AIA, STEREO-A/EUVI, GOES/SUVI, XRT, GOES/XRS, and STIX. AIA provided observations with passbands at 94, 131, 193, 171, 211, and 335 Å, with a pixel size of approximately 0.6 arcseconds. SUVI provided similar wavelengths to AIA: 94, 131, 195, 171, 195, and 284 Å, with a pixel size of approximately 2.5 arcseconds. STEREO-A/EUVI offered imaging in 171, 195, and 284 Å coronal passbands.
@@ -75,21 +75,21 @@ We use the emission measure and DEM weighted temperature estimated from the inve
 where $EM^{c}_{j}$ and $DEM_{c}(T)_{j}$ are the column emission measure and the column DEM in 5.0$<$$\log\,T$$<$7.4 for the j-th pixel in the FOV. We have used $n_{e}^{2}\times LOS~=EM_{c}$ and a filling factor $\textit{f}~=~1$. For the 2020 Nov 29 flare we mask the solar disk while calculating the DEMs and thermal energy. For our analysis, one of the major uncertainties in determining the emitting volume depends on determining the LOS for individual pixels in the FOV.
 
 %%--------------------------
-\begin{figure*}[ht!]
+\begin{figure}[ht!]
     %\hspace{-1cm}
     \includegraphics[width=0.9\textwidth,trim={2cm 5cm 3cm 3cm},clip]{oct28_align.pdf}
     \caption{Panel (a): the flare arcade in AIA 193 {\AA}. Panel (b): STIX soft X-ray contours (4 {--} 16 keV, solid pink lines) and hard X-ray contours (16 {--} 50 keV, solid blue lines) aligned to AIA 1600 {\AA} and over plotted. Panel (c): the emission measure map of the region for $5~<log(T)~<7.4$. Panel (d): the DEM weighted temperature map of the region.}
     \label{fig:flare}
-\end{figure*}
+\end{figure}
 %%--------------------------
 
 %%--------------------------
-\begin{figure*}[ht!]
+\begin{figure}[ht!]
 \centering
     \includegraphics[trim={4.8cm 1.5cm 6cm 2.5cm},clip,width=0.9\textwidth]{nov_29_align.pdf}
     \caption{Panel (a): the flare arcade in AIA 131 {\AA}. Panel (b): {\it Hinode}/XRT Be-Med soft X-ray image recorded almost at the same time. Panel (c):  the DEM weighted temperature map of the region for $5~<log(T)~<7.4$. Panel (d): the emission measure map of the region for $5~<log(T)~<7.4$}
     \label{fig:flare2}
-\end{figure*}
+\end{figure}
 %%--------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,30 +103,30 @@ Fig.\ref{fig:flare_orient}a & b illustrates the geometric effect of observing fr
 To calculate the height of the flare loop, we utilize co-temporal STEREO-A 171 {\AA}, 195 {\AA}, and AIA 171 {\AA}, 193 {\AA} images with \textit{scc\_measure.pro}, available in the \textit{sswidl}. This routine enables us to select a point on the observation from one vantage point, and the LOS through the same point is shown on the observation from the other vantage point. By identifying similar emission characteristics, we can determine the 3D coordinates of the point (heliographic latitude, longitude, and radial distance). This measurement is repeated at various positions along the loop top to calculate the change in loop height across the arcade. However, it is important to note that the height estimation using \textit{scc\_measure.pro} is limited by our ability to identify ``similar emission characteristics'' between the AIA and STEREO-A observations.
 
 %%--------------
-\begin{figure*}[ht!]
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=\textwidth,trim={2cm 6cm 2cm 6cm},clip]{flare_orient.pdf}
     \caption{Panel (a): {\it STEREO-A}/EUVI 171 {\AA} observation of the flare arcade in the decay phase. The magenta cross marks a point on the top of the arcade. The LOS goes into the page through that point. Panel (b): SDO/AIA 171 {\AA} observation of the flare arcade. The red line marks the LOS through the arcade from the STEREO-A perspective projected to the AIA perspective.}
     \label{fig:flare_orient}
-\end{figure*}
+\end{figure}
 %%--------------
 
 %%--------------
-\begin{figure*}[ht!]
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=0.9\textwidth,trim={4cm 5cm 3cm 5cm},clip]{nov29_triangulate.pdf}
     \caption{Panel (a): SDO/AIA 193 {\AA} observation of the Nov 29 flare in the decay phase. The blue cross marks a point on the top of the arcade. The LOS goes into the page from AIA perspective. Panel (b): {\it STEREO-A}/EUVI 195 {\AA} observation around same time. The blue solid line is the LOS from AIA perspective in panel (a) projected onto {\it STEREO-A} perspective. We can trace out the height of the flare arcade at various locations using \textit{scc\_measure.pro}. The height of the arcade at various points from the Sun's surface is marked in panel (a).}
     \label{fig:flare_orient2}
-    \end{figure*}
+    \end{figure}
 %%--------------
 
 %%--------------
-\begin{figure*}[ht!]
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\textwidth,trim={3cm 2cm 3cm 0cm},clip]{flare_orient_pt2.pdf}
     \caption{Panel (a): Cartoon demonstrating the projection effects of a semicircular loop between STEREO-A and AIA vantages due to the difference between polar ($\theta$) and azimuthal ($\phi$) angles, respectively. Panel (b) : The calculated LOS map from the AIA perspective, with the estimated loop top height under the assumption of a semi-circular loop geometry.}
     \label{fig:flare_orient_2}
-\end{figure*}
+\end{figure}
 %%--------------
 
 To determine the extent of the flare arcade, we select pixels within an emission measure contour of 5\% of the peak emission measure value. This contour is calculated based on the emission measure inferred from the DEM, which reflects the density of plasma across the temperature range of $5<\log,(T)<7.4$. This approach provides a more comprehensive estimate of the flare arcade compared to methods based solely on intensity observations, which may miss significant portions of the arcade due to the highly multi-thermal nature of the plasma. Outside of the flare arcade, we assume a line of sight (LOS) thickness of approximately 2 Mm, corresponding to the average thickness of the chromosphere.
@@ -190,13 +190,13 @@ U^{cumulative}_{e}(t) = \sum_{t'=t_{0}}^{t} U_{e}(t')
 \]
 
 %%--------------
-\begin{figure*}[ht!]
+\begin{figure}[ht!]
     \centering
     \includegraphics[trim={3cm 2cm 6cm 3.5cm},clip,width=0.54\textwidth]{oct28_lc_2.pdf} 
     \includegraphics[trim={3.5cm 8cm 3cm 2cm},clip,width=0.45\textwidth]{oct28_fit_2.pdf}
-    \caption{Panel (a): STIX light curve of the 2021 Oct 28 X-class event in different energy bands as labelled. The black, magenta, yellow and blue solid lines show the light curve in 4{--}6~keV, 6{--}12~keV, 12{--}25~keV and 25{--}50 keV. Panel (b): STIX spectra fit at 15:27{--}15:28 UT, during impulsive phase. We fit the spectra with `\textit{thcik2}' (green solid line) and `\textit{2vth}' (yellow solid line). We show the complete fit function `\textit{2vth+thick2}' with the solid red line. The lower panel shows the normalized residuals of the fit.}
+    \caption{Panel (a): STIX light curve of the 2021 Oct 28 X-class event in different energy bands as labelled. The black, magenta, yellow and blue solid lines show the light curve in 4{--}6~keV, 6{--}12~keV, 12{--}25~keV and 25{--}50 keV. Panel (b): STIX spectra fit at 15:27{--}15:28 UT, during impulsive phase. We fit the spectra with `\textit{thick2}' (green solid line) and `\textit{2vth}' (yellow solid line). We show the complete fit function `\textit{2vth+thick2}' with the solid red line. The lower panel shows the normalized residuals of the fit.}
     \label{fig:stix_an}
-    \end{figure*}
+    \end{figure}
 %%--------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

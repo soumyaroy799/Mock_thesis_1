@@ -7,7 +7,7 @@
 \suit~consists of two main sub-units: The \suit~optics package - comprising an off-axis Ritchey-Chr\'{e}tien telescope, and \suit~Electronics package - responsible for communicating with the telescope to perform imaging. The main components of the \textit{SUIT} optics package include a multi-operation entrance door, a thermal filter to control the amount of incoming sunlight, primary and secondary mirrors, a shutter mechanism to control exposure times, baffles to reduce stray and scattered light, a motorized filter wheel assembly, a piezoelectric focusing mechanism, and a CCD detector. Figure \ref{fig:suit} shows a schematic diagram of the telescope.
 
 %%%%%%%%%%%%%%%%%%
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\textwidth]{SUITLayout.jpg}
     \caption{Schematic diagram of the \textit{SUIT} telescope.}
@@ -18,7 +18,7 @@
 \suit~observes the Sun in eleven spectral bands, of which three are broadband (referred to as BB) and eight are narrow bands (referred to as NB), as listed in Table~\ref{tab:science_filters}. These are used to image different heights of the solar atmosphere, from the photosphere to the chromosphere. In the wavelength range of interest, i.e., 200--400 nm, the solar flux increases by two orders of magnitude (see Fig.~\ref{fig:sun_spec}). The spectrum is SOLSTICE and SOLSPEC solar flux combined. Therefore, we must employ certain combination filters to control solar flux levels and achieve the best signal-to-noise ratio (SNR) at each filter bandpass. These combination filters are listed in the second column of Table~\ref{tab:science_filters}. Note that \textit{SUIT} uses BB01 as a combination filter for NB01 and BB01. Similarly, NB08 is used as a combination filter for another NB08 filter. In total, \textit{SUIT} has 16 filters mounted on two filter wheels, each having eight slots. A given filter combination is achieved by rotating the two filter wheels independently and placing the desired filter combination in the beam path.
 
 %------------------------------------------------------------
-\begin{figure}
+\begin{figure}[ht!]
     \begin{center}
     \begin{tabular}{c}
     \includegraphics[trim={0.8cm 0cm 2cm 1.2cm},clip,width=0.6\linewidth]{solar_spec_2.pdf}
@@ -78,7 +78,7 @@ One of the key steps in estimating the imaging performance was to quantify, if t
 %%%
 
 %%%%%%%%
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \includegraphics[trim={1cm 0cm 1cm 1cm},clip,width=0.7\textwidth]{jitter_sim.pdf}
     \caption{The figure shows the simulated drift for the yaw, roll and pitch axis of the payload as a function of time for the aforementioned four cases in \S\ref{sec:suit_jitter}. The panel (a) shows the simulated drift when there is no shutter or FW movement. Panel (b) shows the same when there is only shutter movement. Panel (c): when there is both shutter and FW movement and FW movement compensation is employed. Panel (d): when there is both shutter and FW movement but the FW movement compensation is not employed.}
@@ -89,7 +89,7 @@ One of the key steps in estimating the imaging performance was to quantify, if t
 The Fig.~\ref{fig:jitter_sim} shows the simulated drift for the aforementioned four cases. We did a Fourier analysis of the simulated drift data to characterize the spacecraft jitter from the spacecraft drift. The Fig.~\ref{fig:jitter_sim_ps} shows the power spectrum for the simulated drift shown in Fig.~\ref{fig:jitter_sim}. The SUIT imaging channels have a maximum possible exposure$~\sim$~1.4 s, which corresponds to a frequency of~$\sim$~0.7 Hz and lower exposures would correspond to a higher frequency. So, signals in the Fourier transform corresponding to 0.7 Hz or higher are capable of affecting the imaging within the exposure window. We assumed any signal with a frequency 0.5 Hz or greater from the Fourier transform to be Jitter signal. We then took a frequency cut at 0.5 Hz, of the power spectrum to filter the drift from the jitter and then took an inverse FT to reconstruct the jitter signal for the three axis. To calculate the amount of RMS jitter on various time scales relevant in the context of SUIT exposure times, we took the extracted jitter signal and picked out bins of multiple time scales and calculated the RMS jitter for them. We had several bins for each time scale, each of which gave us RMS jitter and maximum jitter within that bin. We averaged all the bins to estimate the RMS jitter and maximum Jitter for that specific timescale. Figures \ref{fig:rms_jitter} ad \ref{fig:max_jitter} shows the RMS and maximum jitter as a function of timescale. SUIT has a 0.7\arcsec/pix resolution. Both the average and the maximum jitter even in the worst case scenario, i.e when shutter torque and FW movement is present but the FW movement compensation is not employed, is much lower than the pixel size of SUIT within timescales relevant to exposure times for SUIT. We did not need to account for the jitter while characterizing the imaging performance.
 
 %%-----------------------------%%
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \includegraphics[trim={0cm 0cm 1cm 1cm},clip,width=0.7\textwidth]{jitter_psd.pdf}
     \caption{The figure shows the FT of the simulated drift for the yaw, roll and pitch axis of the payload as a function of time for the aforementioned four cases in \S\ref{sec:suit_jitter}. The \textbf{panel (a)} shows the FT of the simulated drift when there is no shutter or FW movement. \textbf{Panel (b)} shows the same when there is only shutter movement, \textbf{panel (c)}: when there is both shutter and FW movement and FW movement compensation is employed, \textbf{panel (d)}: when there is both shutter and FW movement but the FW movement compensation is not employed.}
@@ -98,7 +98,7 @@ The Fig.~\ref{fig:jitter_sim} shows the simulated drift for the aforementioned f
 %%-----------------------------%%
 
 %%-----------------------------%%
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \includegraphics[trim={0cm 0cm 1cm 1cm},clip,width=0.7\textwidth]{rms_jitter.pdf}
     \caption{The RMS jitter at various timescales for the four scenarios of operation.}
@@ -107,7 +107,7 @@ The Fig.~\ref{fig:jitter_sim} shows the simulated drift for the aforementioned f
 %%-----------------------------%%
 
 %%-----------------------------%%
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \includegraphics[trim={0cm 0cm 1cm 1cm},clip,width=0.7\textwidth]{max_jitter.pdf}
     \caption{The Maximum jitter at various timescales for the four scenarios of operation.}
@@ -141,7 +141,7 @@ where $R(\lambda)$ is the effective area for the specific science filter combina
 where $TF(\lambda), PM(\lambda), SM(\lambda), SF_{i}(\lambda), SF_{j}(\lambda), L(\lambda)~and~QE(\lambda)$ are the measured responses as a function of wavelength of thermal filter, primary mirror, secondary mirror, filters in filter wheel 1 and 2, field corrector lens and the quantum efficiency of the CCD. The effective area curves for each filter are shown in Fig.~\ref{fig:eff_area}.
 
 %%%%%%%%%%%
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=0.7\textwidth]{eff_area.pdf}
     \caption{The effective area curves for SUIT science filters.}
@@ -251,7 +251,7 @@ We could not carry out the spectral characterization for the NB08 filter due to 
 In Fig. \ref{fig:nb8_ghost} (a), we depict the fiber image captured at 396.85 nm. The position of the central image of the fiber, along with the sparsely spaced ghost reflections, is delineated by a white dashed box. Fig. \ref{fig:nb8_ghost} (b) offers a magnified perspective of this box, revealing the sparsely shaped ghost reflections indicated by white arrows. Some ghost reflections are observed very close to the central patch. Fig. \ref{fig:nb8_ghost} (c) provides a closer view around the central patch, with solid and dotted arrows indicating two closely spaced ghost reflections situated very close to the center. Given that these ghost reflections appear in proximity to the central patch and the relative brightness of the central patch to the ghost reflections fluctuates with wavelength, the estimation of the 99\% ensquared energy radius is also influenced.
 
 %%%%%%%%%%%%%%
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\textwidth]{nb8_ghost_im.pdf}
     \caption{(a) The ghost reflections of the optical fiber as seen with the NB08 filter. The input beam is centered at 396.85 nm. The position of the ghost reflections is marked with a white dashed box. (b) The zoomed-in view of the white dashed box. The arrows indicate sparsely spaced ghost reflections. (c) The arrows indicate two closely spaced ghost reflections close to the center. (d) 99\% ensquared energy box around the fiber bundle at 396.85 nm. (e) 99\% ensquared energy box around the fiber bundle at 396.60 nm.}
@@ -330,7 +330,7 @@ In general, for radiometric calibration, on-board standard sources such as diode
 Any astronomical source that meets these criteria and has its spectral energy distribution (SED) studied and calibrated to absolute units would be suitable for radiometric calibration. Stars such as Sirius A (HD48915/HR2491) and Vega (HR7001) largely fulfill the aforementioned criteria, with the exception of Sirius A, which has a white dwarf companion known as Sirius B. However, the apparent magnitudes of Sirius A and Sirius B are $-1.46$ \citep{hoffleit91} and $8.44$ \citep{mccook99,holberg13} respectively, ensuring that the contribution from Sirius B is mostly negligible. The absolute calibrated spectra for both stars are depicted in Fig.~\ref{fig:spec_1} and are sourced from the CALSPEC archive, which contains composite stellar spectra used as flux standards in the Hubble Space Telescope (HST) system.
 
 %------------------------------------------------------------
-\begin{figure}
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=0.7\linewidth]{spectrum_sir_veg.pdf}
     \caption{Calibrated spectra of Vega and Sirius A taken from \href{https://www.stsci.edu/hst/instrumentation/reference-data-for-calibration-and-tools/astronomical-catalogs/calspec}{CALSPEC}, Vega in Blue and Sirius A in Orange.}
@@ -345,7 +345,7 @@ Any astronomical source that meets these criteria and has its spectral energy di
 A high level of photometric accuracy is essential for imaging the Sun and monitoring spectral irradiance. It's noteworthy that the total energy output from the Sun at wavelengths below 400 nm comprises only about 8\% of the total solar irradiance (TSI). However, there is a recorded variability of over 60\% in radiation below 400 nm over a solar cycle \citep{krivova06}, whereas the variability in TSI over a solar cycle is approximately 0.1\%. Photometric accuracy is defined as the ratio of the Poisson noise of the signal to the signal itself. The number of photo-electrons produced in a given exposure time is give by Eqn.~\ref{eq1},\ref{eq:eff_area}. We aim for a photometric accuracy of 0.2\%, which corresponds to a photo-electron count of $\sim 2.5 \times 10^{5}$. Considering this requirement, we compute the exposure times required for both Vega and Sirius A, which are given in Table~\ref{tab_2}.
 
 %-------------------------------------------------
-\begin{table}
+\begin{table}[ht!]
 \centering
 \begin{tabular}{ccccc}
 \hline
