@@ -4,7 +4,7 @@
 %EDITED SLIGHTLY AND UPLOADED TO OVERLEAF BY BEN COOK (bacook17@gmail.com)
 
 % use "plain" for committee to read, or for printing single-spaced in general
-\documentclass[plain]{hvdthesis}
+\documentclass[keepsake]{hvdthesis}
 
 % use "bound" for submitting to Harvard 
 %\documentclass[bound]{hvdthesis}
@@ -45,6 +45,15 @@ Page left intentionally blank.
 \makecover
 	%% Copyright
 %\copyright
+
+\newpage
+
+\thispagestyle{plain}
+{\centerline {\em "The first principle is that you must not fool yourself, }}
+{\centerline {\em and you are the easiest person to fool."}}
+{\rightline {\em {--} Richard P. Feynman}}
+
+\newpage
 	%% Abstract
 \input{abstract.tex}
 %\input{abstract_short.tex}
@@ -64,10 +73,24 @@ Page left intentionally blank.
 \listoftables
 
 \newpage
+\clearpage
+
+\thispagestyle{plain}
+%\addcontentsline{toc}{chapter}{List of Publications}
+\chaptermark{List of Publications}
+\vskip 0.5cm
+{\centerline {\Large \bf List of Publications}}
+\vskip 0.5cm
+\normalsize
+
+\input{pub.tex}
+
+\newpage
+\clearpage
 
 \thispagestyle{plain}
 \addcontentsline{toc}{chapter}{List of Abbreviations}
-\chaptermark{List of Abbreviations}
+%\chaptermark{List of Abbreviations}
 \vskip 0.5cm
 {\centerline {\Large \bf List of Abbreviations}}
 \vskip 0.5cm
@@ -76,6 +99,7 @@ Page left intentionally blank.
 \input{abbr.tex}
 
 \newpage
+\clearpage
 	%% Acknowledgments
 %\input{acknowledge.tex}
 \thispagestyle{plain}
@@ -90,8 +114,8 @@ Page left intentionally blank.
 
 
 %\hfill -- RCH
-%\newpage
 
+\newpage
 \clearpage
 %	%% Dedication
 %\input{dedication.tex}
@@ -99,7 +123,9 @@ Page left intentionally blank.
 \addcontentsline{toc}{chapter}{Dedication}
 
 \vspace*{\fill}
-{\centerline {\em Your thoughtful dedication goes here.}}
+{\centerline {\em Dedicated to everyone who pushed me one step at a time,}} 
+{\centerline {\em every time I was about to give up!}}
+{\centerline {\em And to my younger self, who was brave enogh to embark on this journey...}}
 %\vskip 1.5cm
 %{\centerline {\em }}
 \vspace*{\fill}
@@ -139,15 +165,7 @@ Page left intentionally blank.
 {\em journal reference info}}
 \end{quote}
 \input{./chapter4/ms.tex}
-%
-%\chapter{Stellar calibration of SUIT}\label{c:chap5}
-%\chaptermark{SUIT stellar calibration}
-%\begin{quote}
-%{\em ~~~~~~~This thesis chapter originally appeared in the literature as} \\
-%{authors,
-%{\em journal reference info}}
-%\end{quote}
-%\input{./chapter5/ms.tex}
+
 %
 \chapter{Effects of Solar flares on the local plasma environment from Mg II observations}\label{c:chap5}
 \chaptermark{Solar flares Mg II}
@@ -169,7 +187,7 @@ Page left intentionally blank.
 \clearpage
 %
 \chapter{First flares observed by {\suit}}\label{c:chap7}
-\chaptermark{Solar flare energy}
+\chaptermark{First Flares observed with SUIT}
 \begin{quote}
 {\em ~~~~~~~This thesis chapter originally appeared in the literature as} \\
 {authors,
@@ -179,8 +197,13 @@ Page left intentionally blank.
 \clearpage
 %
 
+\chapter{Echoes of the Solar Inferno: Summary and Future Prospects}\label{c:chap8}
+\chaptermark{Outlook}
+\input{./chapter8/ms.tex}
+\clearpage
+
 % I changed  thebibliography in hvdthesis.cls, so that it generates
-% a ToC entry, and is headed References instead of Bibliography. -HJC
+% a ToC entry, and is headed References instead of Bibliography. -SR
 \singlespace
 %\bibliographystyle{aasjournal}
 \bibliography{your_bib_file}

@@ -31,8 +31,9 @@
 
 
 %-----------------------------------------------------------
-\begin{table*}[ht!]
+\begin{table}[ht!]
 \begin{center}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{||l|c|c|c|r||}
 \hline
 \textbf{Science}  &	\textbf{Combination} &	\textbf{Central} & \textbf{Bandpass} &\textbf{Science} \\
@@ -50,11 +51,11 @@ BB1 	& BB1		& 220.0				& 40.0		& Herzberg Continuum \\
 BB2 	& BP4		& 277.0 			& 58.0       & Hartley Band\\
 BB3 	& BP4		& 340.0				& 40.0        & Huggins Band\\
 \hline
-\end{tabular}
+\end{tabular}}
 \end{center}
 \caption{List of science filters on board \suit. Columns from left to right denote filter mnemonics (including science and combination filters; NB: Narrowband, BB: Broadband, BP: Bandpass), central wavelengths for science filters and corresponding bandpasses, and the observation interest for the filter.} 
 \label{tab:science_filters}
-\end{table*}
+\end{table}
 %-----------------------------------------------------------
 
 
@@ -177,8 +178,9 @@ In Table~\ref{tab:throughput}, we present a comparison between the solar counts 
 Our findings indicate that the measured data counts per second align within a 20\% margin of those derived from the throughput model (refer to Table \ref{tab:throughput}), except for NB07. One possible explanation for this discrepancy lies in the utilization of SOLSPEC data for modeling the throughput beyond 310~nm, while SOLSTICE data is employed for modeling throughput below this threshold. It's worth noting that SOLSPEC data provides a resolution of 0.05~nm, unlike SOLSTICE data, which offers a finer resolution of 0.025~nm. Consequently, this discrepancy leads to reduced accuracy in the modeled data counts for filters operating beyond 310 nm.
 
 %-----------------------------------------------------------
-\begin{table*}[ht]
+\begin{table}[ht]
 \begin{center}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{||c|c|c|c||}
 \hline
 Science & Counts calculated & Counts calculated & Ratio of \\
@@ -195,11 +197,11 @@ NB08 & 26523 & 24096 & 1.1 \\
 BB03 & 511722 & 434532 & 1.18 \\
 \hline
 
-\end{tabular}
+\end{tabular}}
 \end{center}
 \caption{Comparison of the data numbers derived from throughput model (using SOLSTICE and SOLSPEC data) with the data numbers inferred from the measurements.} 
 \label{tab:throughput}
-\end{table*}
+\end{table}
 %-----------------------------------------------------------
 
 Surprisingly, the modeled counts for NB08, despite falling beyond 310 nm, do not exhibit significant deviation. This can be attributed to the extremely narrow bandpass of NB08, which is merely 0.01 nm wide and centered at the prominent Ca-II h spectral line. Conversely, BB03 features a broader effective bandpass of 40 nm, rendering the model less sensitive to minor fluctuations in the sparsely sampled SOLSPEC solar spectrum. Consequently, this results in comparable data counts per second to those observed in the laboratory.
@@ -347,6 +349,7 @@ A high level of photometric accuracy is essential for imaging the Sun and monito
 %-------------------------------------------------
 \begin{table}[ht!]
 \centering
+\resizebox{0.7\textwidth}{!}{%
 \begin{tabular}{ccccc}
 \hline
         & Exposure time(minutes) & Exposure time(minutes) \\
@@ -364,7 +367,7 @@ A high level of photometric accuracy is essential for imaging the Sun and monito
         BB2 & 20 & 5\\
         BB3 & 13 & 3\\
         \hline
-    \end{tabular}
+    \end{tabular}}
     \caption{The exposure time required to obtain $2.5 \times 10^{5}$ photo-electrons to achieve 0.2\% photometric accuracy in each of the science filters for both Vega and Sirius A.}
 \label{tab_2}
 \end{table}
@@ -405,6 +408,7 @@ Table~\ref{tab:my_table_sun_sir} shows the performance of the method for a Siriu
 \begin{table}[ht!]
 \small
 \centering
+\resizebox{0.9\textwidth}{!}{%
     \begin{tabular}{|ccccc|}
     \hline
         Band & $(C=\frac{T_{sir}}{DN_{sir}})\times 10^{15}$ & DN/$10^{13}$ & Predicted Energy & Energy from \\
@@ -433,7 +437,7 @@ Table~\ref{tab:my_table_sun_sir} shows the performance of the method for a Siriu
         \hline
         BB3 & $(221.1\pm2.7)$ & $(176 \pm 4 \times 10^{-6})$ & $(3.903\pm0.047)\times10^{2}$ & $3.896\times10^{2}$\\
         \hline
-    \end{tabular}
+    \end{tabular}}
     \caption{The performance of the method with Sirius A as calibrating source and sun as a target with 200s exposure in all bands.}
 \label{tab:my_table_sun_sir}
 \end{table}

@@ -6,7 +6,27 @@
 
 The Solar Ultraviolet Imaging Telescope onboard {\it Aditya-L1} \citep[{\it Aditya-L1}/SUIT,][]{article,ghosh16,adityal1,suit_main} provides a targeted probe into the Chromosphere and Transition region. It provides continuous full-disk and Region of Interest (RoI) coverage of the Sun in eleven pass bands. The details of these bands are provided in chapter~\ref{c:chap3} Tab.~\ref{tab:science_filters}. The eight narrow bands provide coverage across the \ion{Mg}{2} k and h lines, \ion{Ca}{2} h line, the CN band, red and blue wing of the \ion{Mg}{2} window and parts of the NUV continuum. As alluded earlier, this provides unprecedented coverage of the Chromospheric and Transition region structure of solar flares.
 
-The {\it Aditya-L1} was launched on September 2nd, 2023. The first light observations were made on December 5th, 2023 while the payload was still in cruise phase. For the majority of the cruise phase the payload only operated in the 2k synoptic mode, i.e. it only captured continuous (2k $\times$ 2k) observations in NB4 (\ion{Mg}{2} h line) with one minute cadence. The L1 insertion was carried out on January 6th, 2024. Following that the payload also started taking (4k $\times$ 4k) observations in all eleven science filters. Various components of the flare detection algorithm were progressively turned on. In this chapter we discuss some of the initial flare observations made by SUIT. The first flare triggered by the flare detection algorithm was a X6.3 flare from north-west corner of the disk on February 22nd, 2024, which was also observed by several other instruments {\it e.g.} {\it SDO}/AIA, {\it IRIS}, {\it SO}/STIX. During the cruise phase, SUIT also observed a X1 flare from the south-east limb of the Sun on December 31st, 2023. We only have observations in the NB4 (\ion{Mg}{2} h line) channel for this flare. But this provides us with an unprecedented view of post-flare loops and possibly reconnection slingshot in the \ion{Mg}{2} line. Subsequent portions of this chapter will be divided into two parts, where we discuss the observations of these two flares separately.
+The {\it Aditya-L1} was launched on September 2nd, 2023. The first light observations were made on December 5th, 2023 while the payload was still in cruise phase. For the majority of the cruise phase the payload only operated in the 2k synoptic mode, i.e. it only captured continuous (2k $\times$ 2k) observations in NB4 (\ion{Mg}{2} h line) with one minute cadence. The L1 insertion was carried out on January 6th, 2024. Following that the payload also started taking (4k $\times$ 4k) observations in all eleven science filters. Various components of the flare detection algorithm were progressively turned on. In this chapter we discuss some of the initial flare observations made by SUIT. The details of this flares are given in Tab.~\ref{f_list}. {\suit} observed an X5 flare on the east limb on 31st Dec, 2023 during its cruise phase. We primarily use observations from AIA with {\suit} observations to comment on the thermal structure and kinematics of the event.  We only have observations in the NB4 (\ion{Mg}{2} h line) channel for this flare as the observation is from during the cruise phase. The first flare triggered by the flare detection algorithm was a X6.3 flare from north-west corner of the disk on February 22nd, 2024, which was also observed by several other instruments {\it e.g.} {\it SDO}/AIA, {\it IRIS}, {\it SO}/STIX. The final flare discussed in this chapter is an X2.9 flare which occurred on 27th May, 2024 on the south east limb of the Sun. Subsequent portions of this chapter will be divided into three parts, where we discuss the observations of these three flares separately.
+
+%----------------------------------------------------
+\begin{table}[ht!]
+\centering
+\caption{Details of the flares studied in this chapter.}
+\label{f_list}
+\resizebox{0.6\linewidth}{!}{%
+\begin{tabular}{lcr}
+\hline
+\hline
+   Event Date  & Peak Time (UT) & Flare Location \\
+\hline
+2023 Dec 31 (X5) & 21:55 & [-968{\arcsec}, 88{\arcsec}] \\
+2024 Feb 22 (X6.3) & 22:34 & [-400{\arcsec}, 350{\arcsec}]\\
+2024 May 27 (X2.9) & 07:08 & [-920{\arcsec}, -250{\arcsec}] \\
+\hline
+\end{tabular}
+}
+\end{table}
+%----------------------------------------------------
 
 %%----------------------------------------------------
 \section{X6.3 flare observed on Feb 22nd, 2024} \label{sec:feb_22nd}
@@ -115,6 +135,100 @@ We see a similar brightening in NB2, the blue wing of the Mg window. The light c
 The other interesting observation is the rise in the continuum intensity, specifically in NB6 and NB7 as the flares happen. We can see a steady rise in the continuum intensity after the M and X class flare (see Fig.~\ref{fig:flare_full}). For the X6.3 flare, we do see some signature of the flare in NB5, although it peaks about $\sim$ 5 minutes later compared to NB3 and NB4. The photospheric nature of the NB5 continuum explains the 5-minute delay of the peak from NB3. We see the flare peak in sequential order of formation height NB3 and NB4 (\ion{Mg}{2}, 22:29 UT) and NB8 (\ion{Ca}{2}) $\Longrightarrow$ NB5 (Photospheric continuum, 22:32:41 UT). We are observing the increase in continuum intensity from 283.2 nm to 388 nm. The consistent increase in continuum intensity is happening across the Balmer jump ($\lambda$~=~364.5 nm).
 
 %%----------------------------------------------------
-\section{X1 flare observed on Dec 31st, 2023} \label{sec:dec_31st}
+\section{X5 flare observed on Dec 31st, 2023} \label{sec:dec_31st}
 %%----------------------------------------------------
 
+NOAA AR 13536 started to appear on the northeast limb on 31st December 2023. It erupted an X5 flare at 21:36 UT. {\suit} was still in the cruise phase, on its way to the L1. The standard synoptic observation mode was not turned on, and {\suit} was only observed in its NB4 (\ion{Mg}{2} h) channel with a minute cadence. AIA, STIX, and SUVI also observed the flare among many other imaging observatories. The {\it GOES} Soft X-ray (SXR) peaked $\sim$ 21:55 UT. The event was located at the heliographic position of $\sim$ [-968{\arcsec}, 88{\arcsec}].
+
+We use JPL horizons system to get the accurate location of the Aditya-L1 spacecraft. We use this location to account for the differences in plate scale between AIA and {\suit} observations. We then co-register and co-align AIA 1600 {\AA} and {\suit} NB4 observations. It is noteworthy that the {\suit} had $\sim$ 7{\degree} roll with respect to AIA during the cruise phase, which needs to be rotated before co-registering the AIA and {\suit} observations. We show a sequence of co-aligned observations in Fig.~\ref{fig:dec_flare_obs}. The AIA 1600 {\AA} observations are plotted in green-black colormap and the {\suit} NB4 observations are plotted in yellow. We see the rising loop in AIA 1600 {\AA} at 21:39 UT. In subsequent frames, we see the ejected plasma blob from NB4 observations is cospatial with the ejected material in AIA 1600 {\AA}.
+
+%%%%%%%%%%
+\begin{figure*}[ht!]
+    \centering
+    \includegraphics[trim = {0.5cm 0.7cm 0.2cm 2cm}, clip, width=0.7\linewidth]{fig1.pdf}
+    \caption{Sequence of coaligned AIA 1600 {\AA} (black-green) and {\suit} NB4 (yellow) observations. We see the erupting loop and parts of the dense loops are co-spatial with the ejecta observed in {\suit} NB4 observations. An animated version of this sequence is available in the online version of the journal.}
+    \label{fig:dec_flare_obs}
+\end{figure*}
+%%%%%%%%%%
+
+We use DEMs calculated from AIA observations to investigate the thermal structure, using regularized inversion method described by \cite{hannah&kontar12}. We show the eruption in AIA 171 {\AA} inverted observation in Fig.~\ref{fig:dec_flare_dem}a. The red dashed box marked the region for the DEM analysis. In Fig.~\ref{fig:dec_flare_dem}b {--} g, we show the region from the red dashed box in various AIA cornal channels. Fig.~\ref{fig:dec_flare_dem}d shows AIA 171 {\AA} inverted (black) co-aligned with \suit~NB4 (yellow) observation. As illustrated earlier, the observed plasma blob in NB4 alignes with the brighter parts of the loop observed in various AIA channels. AIA channels with relatively hotter temperature response component, {\it i.e.} 94, 131, 193 {\AA} we see parts of the ejected loops which are not visible in colder channels, {\it i.e.} 171, 211, 335 {\AA}. In Fig.~\ref{fig:dec_flare_dem}h \& i, we show the emission measure (EM) and DEM weighted temperature of the region, calculated from the AIA observations. The 85\% intensity contour of the plasma blob observed in NB4 is marked with solid black line in Fig.~\ref{fig:dec_flare_dem}i. We mark a region on the same panel from the center of the ejected loop. We plot the DEMs from these two regions. We plot the calculated DEMs in Fig.~\ref{fig:dec_flare_dem}j, for the 85\% intensity contour (black circles) and the central part of the loop (red triangles) respectively. 
+
+%%%%%%%%%%
+\begin{figure*}[ht!]
+    \centering
+    \includegraphics[trim = {1cm 0.5cm 3cm 0.5cm}, clip, width=0.7\linewidth]{fig2.pdf}
+    \caption{(a) Inverted AIA 171 {\AA} observation during the ejection of the loop. Red dashed box marks the region considered for the DEM analysis. (b) {--} (g)  AIA observation in 94, 131, 171, 193, 211, and 335 {\AA} of the red dashed region respectively. The inverted 171 {\AA} observation (panel d) is overplotted on co-aligned \suit~NB4 observation (yellow). (h) Calculated EM from the AIA observations. (i) Calculated DEM weighted temperature from the AIA observations. The 85\% intensity contour of the \suit~NB4 blob is marked with solid black line. The dashed black line marks the central part of the loop. (j) The DEM from solid black contour and dashed black contour are plotted with black circles and red triangles respectively.}
+    \label{fig:dec_flare_dem}
+\end{figure*}
+%%%%%%%%%%
+
+We also calculate the velocity of the plasma blob from \suit~NB4 and AIA 1600 {\AA} observations and compare them. We show the trajectory of the plasma blob as observed from \suit~NB4 in Fig.~\ref{fig:dec_flare_dem}a. The position of the blob at various timestamp are marked with red cross. The velocity calculated bu tracing the ejecta is plotted in Fig.~\ref{fig:dec_flare_dem}b with blue circles (AIA 1600 {\AA}) and red triangles (\suit~NB4). The vertical dashed black line shows the start of the acceleration of the ejected material. Due to the larger field of view (FoV) of \suit~we can track the ejected material further out. In Fig.~\ref{fig:dec_flare_dem}c {--} f shows the sequence of observations from AIA 1600 {\AA} (purple) and 171 {\AA} (yellow-black). Fig.~\ref{fig:dec_flare_dem}g shows the {\it GOES} 1 {--} 8 {\AA} light curve during the flare. The four vertical red lines marks the times of Fig.~\ref{fig:dec_flare_dem}c {--} f. The soft X-ray flux reaches a plateau around 21:42 UT and starts to rise again after that, exhibiting multiple eruptions from the same active region.
+
+%%%%%%%%%%
+\begin{figure*}[ht!]
+    \centering
+    \includegraphics[trim = {0cm 1.7cm 0.5cm 2cm}, clip, width=0.7\linewidth]{fig3.pdf} \\
+    \includegraphics[trim = {1.5cm 4cm 2.5cm 5.5cm}, clip, width=0.5\linewidth]{fig3b.pdf} \\
+    \caption{(a)\suit~NB4 observation at 21:42 UT. The trajectory of the plasma blob is marked with red crosses. (b) The velocity of the ejected material from AIA 1600 {\AA} (blue circle) and \suit~NB4 (red triangle) observation. The vertical dashed black line marks the start of acceleration. (c) {--} (f) Sequence of AIA 171 {\AA} inverted (yellow black) and 1600 {\AA} (purple) observations. A kink develops in the loops at 21:42 UT, marked with black arrow in (d). This is later ejected and accelerates. (g) GOES 1 {--} 8 {\AA} flux. The four vertical lines mark the times of panel (c) {--} (f).}
+    \label{fig:dec_flare_vel}
+\end{figure*}
+%%%%%%%%%%
+
+%%----------------------------------------------------
+\subsection{Discussion} \label{sec:dec_31st_dis}
+%%----------------------------------------------------
+
+For the 31 December, 2023 X5 flare we only have (2k $\times$ 2k) one minute cadence observations in NB4 (\ion{Mg}{2} h). We see the eruption associated with the ejection of a plasma blob, which is cospatial with the ejected loops in AIA 1600 {\AA} and 171 {\AA}, as illustrated in Fig.~\ref{fig:dec_flare_obs}. We then investigate the thermal structure of the ejected loops from AIA observations, to understand the thermal environment of the plasma environment around the ejected material observed in NB4. From the AIA coronal channel observations, we find that parts of the ejected loop appear brighter and this bright region is cospatial with the ejected blob observed in NB4. From the DEM analysis we see that the central part of the ejected loop is hotter and less dense, compared to the parts of the loop which appear brighter (this is illustrated in Fig.~\ref{fig:dec_flare_dem}h \& i). In Fig.~\ref{fig:dec_flare_dem}i we mark the central part of the ejected loop with dotted black line and the 85\% intensity contour of the ejected NB4 plasma blob in black solid line. The DEM from these two regions are marked with red triangles and black circles respectively in Fig.~\ref{fig:dec_flare_dem}j. These DEMs clearly show that the region around the ejected material observed with NB4 have more colder material, resulting in overall colder DEM weighted temperature and denser surrounding environment.
+
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{wrapfigure}{l}{0.45\textwidth}
+    \centering
+    \includegraphics[trim={2cm 2.5cm 2cm 8.7cm}, clip, width=0.9\linewidth]{fig4.pdf}
+    \caption{Sequence of cartoons depicting possible ejection mechanism for the cold plasma blob observed in {\suit} NB4.}
+    \label{fig:cart}
+\end{wrapfigure}
+%%%%%%%%%%%%%%%%%%%%%%
+
+We further investigate the kinematics of the ejected material. The ejection can be tracked further out with the {\suit} observations, albeit with much lower time cadence (1 minute) compared to AIA 1600 {\AA} (24 s). The velocity of the ejection is plotted in Fig.~\ref{fig:dec_flare_vel}b with blue circles (AIA 1600 {\AA}) and red triangles ({\suit} NB4). The measured velocities are consistent with each other. We see an acceleration at $\sim$ 21:42 UT. The tentative start of the acceleration is marked with a vertical dashed black line in Fig.~\ref{fig:dec_flare_vel}b. We see two successive eruption from the same active region wit the AIA observations. This is also illustrated by the {\it GOES} 1 {--} 8 {\AA} light curve in Fig.~\ref{fig:dec_flare_vel}g, as we see a first peak $\sim$ 21:40 UT and a second peak $\sim$ 21:55 UT. The two successive ejection is also consistent with the observed velocity structure. 
+
+We show a possible mechanism to explain the ejection of the plasma blob in Fig.~\ref{fig:cart}. The initial eruption at $\sim$ 21:40 UT pushes cold dense material, as we see relatively steady rise from Fig.~\ref{fig:dec_flare_vel}b. Other loops from the same eruption, reconnects with the previous loops and develops a kink at $\sim$ 21:42 UT. The kink developing can be seen in Fig.~\ref{fig:dec_flare_vel}d, marked by black arrow. This is equivalent to the configuration in Fig.~\ref{fig:cart}c. The release of energy ejects the loop, as the acceleration is seen in the velocity profile after this in Fig.~\ref{fig:dec_flare_vel}b. This ejection is also accompanied by a subsequent brightening from the foot point as seen from AIA 1600 {\AA} observations in Fig.~\ref{fig:dec_flare_vel}e \& f. The SXR flux from this second eruption eventually peaks at $\sim$ 21:55 UT.
+
+%%----------------------------------------------------
+\section{X2.9 flare observed on May 27th, 2024} \label{sec:dec_31st}
+%%----------------------------------------------------
+
+NOAA AR 13697 was fully visible on the southeast limb from 29th May 2024. An X2.9 flare occurred from this active region on 27th May at 06:49 UT. The flare was localized by the onboard flare detection algorithm of {\suit} (For further details please refer to \citep{flare_det}). The event was located at $\sim$ [-920{\arcsec}, -250{\arcsec}] and the {\it GOES} SXR flux peaked at 07:08 UT. The footpoints of the flare were occulted behind the limb, ane the flare loops are only visible once they rise from behind the limb. 
+
+Similar to the previous event we use the JPL horizons system to retrieve the position of Aditya-L1 and project the observations to Earth vantage. We then co-register and co-align AIA 1600 {\AA}, AIA 131 {\AA} and {\suit} NB4 observations. We show a sequence of co-aligned observations in Fig.~\ref{fig:may_flare_obs}. In Fig.~\ref{fig:may_flare_obs}a {--} c the {\suit} observations (yellow) are over-plotted on AIA 1600 {\AA} observations (green-black). This sequence shows the initial prominence eruption.
+
+%%%%%%%%%%
+\begin{figure*}[ht!]
+    \centering
+    \includegraphics[trim = {0cm 0.7cm 0cm 2cm}, clip, width=0.7\linewidth]{fig1_.pdf}
+    \caption{(a) {--} (c) Sequence of AIA 1600 {\AA} (black-green) observations coaligned with {\suit} NB3 (yellow) observations.}
+    \label{fig:may_flare_obs}
+\end{figure*}
+%%%%%%%%%%
+
+Similar to the previous event, we use DEMs calculated from AIA observations to investigate the thermal structure of the post flare loops. We show the post flare loops during the decay phase in Fig.~\ref{fig:may_flare_res}a. {\suit} NB4 (\ion{Mg}{2} h observation in yellow) is over-plotted on inverted AIA 131 {\AA} observation (blue-black). In Fig.~\ref{fig:may_flare_res}b \& c we plot the emission measure and DEM weighted temperature calculated from the AIA observations. The 80\% intensity contour of the off-limb {\suit} NB4 observations are marked in Fig.~\ref{fig:may_flare_res}c. 
+
+%%%%%%%%
+\begin{figure*}[ht!]
+    \centering
+    \includegraphics[trim={0.2cm 0cm 2cm 2cm}, clip, width=0.8\textwidth]{Figures/fig5.pdf}
+    \caption{(a) AIA 131 {\AA} observation in inverted colormap (blue-black), coaligned with {\suit} NB3 observation (yellow). (b) Calculated emission measure from the AIA observation. (c) Calculated DEM weighted temperature from the AIA observation.}
+    \label{fig:may_flare_res}
+\end{figure*}
+%%%%%%%%
+
+%%%%%%%%%
+\subsection{Discussion}\label{may27_dis}
+%%%%%%%%%
+
+Fig.~\ref{fig:may_flare_res}a we see that the {\suit} NB4 off limb features are cospatial wiht the base of the plasma sheet and top of the post flare arcades in AIA 131 {\AA} observations (blue-black). We mark the 85\% intensity contour of {\suit} NB4 observation in the subsequent panels b \& c, which show the emission measure and DEM-weighted temperature calculated from the AIA observations.
+
+The {\suit} NB4 observations are co-spatial with low temperature and relatively low-density region at the loop top, just below the plasma sheet. There is a higher-density region right on top of this region at the base of the plasma sheet. Please note that the density and temperature calculated here are calculated from AIA observations, which are not as sensitive to plasma outside of $\log \mathrm{T} \sim$ 5 {--} 7.5 K. The low density at the loop top can easily be attributed to the plasma being outside of this temperature range. But that would be in contradiction to one of the standard scenarios of post-flare loops, where it is assumed that the post-flare loop-top brightening is created by a collision of evaporating flows from the foot-points and results in elevated density and temperature at the loop top. This has also been demonstrated from 1d loop simulations \citep{sharma16, reeves07}.
+
+%%%%%%%%%%%%
+\section{Outlook}
+%%%%%%%%%%%%
