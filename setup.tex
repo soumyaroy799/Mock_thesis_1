@@ -24,6 +24,21 @@
 \usepackage{pdfpages}
 \usepackage{xspace}
 \usepackage{wrapfig}
+\setcounter{secnumdepth}{3}
+%%--------
+\usepackage{xargs}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+%These are custom definitions which you can change according to your taste.
+\newcommandx{\info}[2][1=]{\todo[linecolor=violet,backgroundcolor=violet!25,bordercolor=violet,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improve}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
+%%---------
+
+
+
 
 %this block is new from Greg S to accommodate change in 2013 format requiring page numbers be centered on every page
 \usepackage{fancyhdr}

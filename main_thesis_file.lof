@@ -1,0 +1,66 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A schematic depiction of the different regions of the Sun.}}{2}{figure.caption.4}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Density and temperature profiles across various layers of the Sun.}}{3}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces IRIS SJI observation of NOAA AR 13521 on Dec 21st, 2023.}}{4}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Different parts of a flare eruption observed across various wavelengths}}{6}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces A schematic diagram of the standard model of solar flare.\relax }}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Correlation of peak {\it GOES} flux with peak thermal energy and flaring plasma volume.}}{12}{figure.caption.10}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces X-ray and optical imaging of the three flares at the peak of the flare.}}{23}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Averaged TSI variations during flares of various strengths.}}{25}{figure.caption.13}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Position of various instruments during the flares.}}{29}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Observation of the X-class flare on October 28, 2021.}}{32}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Observation of the M-class flare on November 29, 2020.}}{33}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces LoS triangulation for the Nov 29th, 2020 flare}}{36}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces LoS triangulation for the Oct 28th, 2021 flare}}{38}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces STIX light curve and spectra fit for the 2021 Oct 28 flare}}{38}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Temporal evolution of the thermal and non-thermal energy for both flares.}}{41}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Calculated thermal energy for the loops and the fan for the November 29th, 2020 flare.}}{42}{figure.caption.23}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Transmission curves of various components of {{\it {SUIT}}}}}{48}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The effective area curves for all science filters as labelled.\relax }}{49}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The measured PSF for the various filter combinations. The colourmap is area normalized, i.e. the sum of the PSF over the total area is unity.\relax }}{51}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The encircled energy curve for the measured PSF. The 95\% encircled energy radius are marked with the vertical dashed red line. The angular scale of the 95\% encircled energy radius is also quoted in each panel for the specific filter combination.\relax }}{52}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The flow chart shows the entire process of generating the simulated intensity maps, from the data cubes and characterizing the filters.\relax }}{54}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Forward modelled intensity maps at various $\mu $ values for BB02 filter of SUIT.\relax }}{55}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Forward modelled intensity maps for various science filters of SUIT.\relax }}{55}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces The effects of convolution on the simulated BB03 intensity map}}{58}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Effects of convolution on the\nobreakspace {}{\it IRIS} raster observation with the NB03 \& NB04 PSF}}{60}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Effects of convolution on the\nobreakspace {}{\it IRIS} raster observation with the NB05 PSF}}{62}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Effects of convolution on the\nobreakspace {}{\it IRIS} raster observation with the NB05 PSF}}{63}{figure.4.11}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Schematic diagram of the \textit {SUIT} telescope.\relax }}{66}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The solar spectrum obtained from SOLSPEC.}}{67}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Simulated drift for the yaw, roll and pitch axis as a function of time.}}{69}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Fourier transform of the simulated drift for the yaw, roll and pitch axis.}}{70}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces The RMS jitter at various timescales for the four scenarios of operation as labelled.\relax }}{71}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces The Maximum jitter at various timescales for the four scenarios of operations as labelled.\relax }}{72}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces The effective area curves for SUIT science filters.\relax }}{73}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Materion provided cosmetics report for various option of BB2 filters.\relax }}{76}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Spectra of Vega and Sirius A}}{80}{figure.caption.44}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The observations of the M3.7 flare on November 4th, 2015}}{88}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Sequence of AIA 304 {\r A} images for the Nov 4th, 2015 flare.}}{89}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The six coronal channel observations from SDO/AIA for the Nov 4th, 2015 flare.}}{90}{figure.caption.50}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Mg$\tmspace +\thickmuskip {.2777em}${\small \rm II}\relax \nobreakspace {}h and k line intensity observation with artificially rastered HMI LOS magnetic field for the November 4th, 2015 flare.}}{91}{figure.caption.51}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Fit of the Mg$\tmspace +\thickmuskip {.2777em}${\small \rm II}\relax \nobreakspace {}window for a pixel.}}{92}{figure.caption.52}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The 1{--}8\nobreakspace {}{\r A} GOES light curve of the flare over-plotted with the time variation of Mg$\tmspace +\thickmuskip {.2777em}${\small \rm II}\relax \nobreakspace {}k/h line intensity ratio.}}{92}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Fitted line profiles for the binned spectra for various magnetic field strengths from various times.\relax }}{94}{figure.caption.54}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Mg$\tmspace +\thickmuskip {.2777em}${\small \rm II}\relax \nobreakspace {}k to h line intensity ratio for various magnetic flux density bins at various time steps during the evolution of the flare.\relax }}{94}{figure.caption.55}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Time evolution of the Mg$\tmspace +\thickmuskip {.2777em}${\small \rm II}\relax \nobreakspace {}k to h line intensity ratio obtained from averaged spectrum over the corresponding magnetic flux bin.}}{95}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces The observations of the X flare on November 4th, 2015}}{96}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Top panel: Mg$\tmspace +\thickmuskip {.2777em}${\small \rm II}\relax \nobreakspace {}h and k line intensity observation with artificially rastered HMI LoS magnetic field for the October 22, 2014 flare.}}{97}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces The observations of the X flare on February 3rd, 2015.}}{98}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Mg$\tmspace +\thickmuskip {.2777em}${\small \rm II}\relax \nobreakspace {}h and k line intensity observation with artificially rastered HMI LOS magnetic field for the February 3rd, 2015 flare.}}{98}{figure.caption.60}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Time evolution of the Mg$\tmspace +\thickmuskip {.2777em}${\small \rm II}\relax \nobreakspace {}k to h line intensity ratio obtained from averaged spectrum over the corresponding magnetic flux bin for the February 3rd, 2015 flare.}}{99}{figure.caption.61}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces SUIT observation of the flare in all NB filters at their respective peaks}}{105}{figure.caption.62}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces AIA and GONG observations of the flare}}{105}{figure.caption.63}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces SUIT observation of the flare in all NB filters at NB3 peak}}{106}{figure.caption.64}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Comparison of SUIT NB lightcurve with other observatories}}{107}{figure.caption.65}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Top panel: STIX spectra integrated between 15:27:00{--}15:27:10\nobreakspace {}UT during impulsive phase, fitted with `\textit {thcik\_warm\_kappa}' (solid yellow), `\textit {vth}' (solid green) and the complete fit function `\textit {vth+thick\_warm\_kappa}' (solid red line). Bottom panel: The residue of the fit of the STIX spectra.\relax }}{120}{figure.caption.66}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Inferred electron injection rate as a function of energy for power law electron injection (solid blue) and $\kappa $-distributed electron injection (dashed red) from the fit parameters listed in Tab.\nobreakspace {}\ref {tab:my_label}.\relax }}{122}{figure.caption.68}%

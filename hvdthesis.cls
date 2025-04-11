@@ -83,9 +83,9 @@
 
 \ProcessOptions
 \if@twoside
-  \LoadClass[12pt,letterpaper,twoside]{book}
+  \LoadClass[11pt,a4paper,twoside]{book}
 \else
-  \LoadClass[12pt,letterpaper,oneside]{book}
+  \LoadClass[11pt,a4paper,oneside]{book}
 \fi
 
 \RequirePackage{aas_stuff}
@@ -160,41 +160,41 @@
   \doublespace
   \thispagestyle{empty}
   \hbox{ }
-  \vspace{-2.0cm}
+  \vspace{-2.5cm}
   \begin{center}
   %%%%%%%%%%%%%%
   \includegraphics[width=0.2\textwidth]{IUCAA-logo.png}
-  \vskip 0.6cm minus 0.2cm
+  \vskip 0.4cm minus 0.2cm
   %%%%%%%%%%%%%%
   The Inter-University Center for Astronomy and Astrophysics \par
   Post Bag 4, Ganeshkhind, Pune, 411007, India
   \vskip 0.4cm minus 0.2cm
-  {\Large \textbf \thtitle \setlength{\baselineskip}{36pt plus 3pt minus 6pt}\par}
-  \vskip 0.8cm minus 0.2cm
+  {\Large \textbf \thtitle \setlength{\baselineskip}{30pt plus 3pt minus 6pt}\par}
+  \vskip 0.3cm minus 0.2cm
   \normalsize
   A dissertation presented \par
-  \vskip 0.4cm minus 0.2cm
+  \vskip 0.1cm minus 0.2cm
   by 
-  \vskip 0.2cm minus 0.2cm
+  \vskip 0.1cm minus 0.2cm
   {\Large \thauthor \par}
   {\Large Supervisor: \thadvisor \par}
   \normalsize
   \vskip 0.2cm minus 0.2cm
   to \par
   %%%%%%%%%%%%%%
-  \includegraphics[width=0.1\textwidth]{JNU-logo.png}
-  \vskip 0.4cm minus 0.2cm
+  \includegraphics[trim={1cm 0.5cm 1cm 0.5cm}, clip, width=0.25\textwidth]{Figures/JNU_new_logo.pdf}
+  \vskip 0.2cm minus 0.4cm
   %%%%%%%%%%%%%%
-  \vskip 0.4cm minus 0.2cm
-  The \thdept \par
+  %\vskip 0.4cm minus 0.2cm
+  \thdept \par
   \setlength{\baselineskip}{24pt minus 6pt}
-  in partial fulfillment of the requirements \par
+  in partial fulfilment of the requirements \par
   for the degree of \par
   Doctor of Philosophy \par
   %in the subject of \par
   %\thsub
   %\vskip 0.4cm minus 0.2cm
-  \thmonth{} \thyear
+  November \thyear
   \end{center}
   \singlespace
   \newpage

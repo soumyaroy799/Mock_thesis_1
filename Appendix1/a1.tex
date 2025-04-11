@@ -1,0 +1,99 @@
+%%%%%%%%%%%%
+%\renewcommand{\thesection}{6A}
+%\section{Calculation of Oscillator strengths for the \ion{Mg}{2}~k~\&~h lines}\label{sec:a1}
+%%%%%%%%%%%%
+
+
+{\bf For a transition from u$\rightarrow$l the oscillator strengths can be expressed as:
+
+%%-----------%%
+\begin{equation*}
+    f_{lu}~=~\lambda_{lu}^{2}\times \frac{g_{u}}{g_{l}}\times C_{1}\times A_{ul}
+\end{equation*}
+%%-----------%%
+Where, $\mathrm{\lambda_{lu}}$ is the transition wavelength, $\mathrm{g_{u}}$ and $\mathrm{g_{l}}$ are the degeneracy of the upper and lower level and $\mathrm{A_{ul}}$ is the Einstein coefficient for spontaneous emission. Since the \ion{Mg}{2}~k~and~h line transitions happen to same lower energy state from two upper energy states of slightly different energy, this gives us:
+
+%%-----------%%
+\begin{equation}\label{eq6.2}
+    \frac{f_{k}}{f_{h}}~=~\left(\frac{\lambda_{k}}{\lambda_{h}}\right)^{2}\frac{g_{k}A_{k}}{g_{h}A_{h}}
+\end{equation}
+%%-----------%%
+Both the k and h line transitions are dipole transitions. In case of dipole transitions, the Einstein A coefficient can be expressed as:
+
+%%%%%%%%%%
+\begin{equation}
+    A_{ul}~=~\frac{C_{2}}{\lambda^{3}}|\bra{l}r\ket{u}|^{2}
+\end{equation}
+%%%%%%%%%%
+
+\noindent where, $\mathrm{\lambda}$ is the transition wavelength, $\mathrm{J_u}$ is the total angular momentum quantum number of the upper state. This gives us from eqn.~\ref{eq6.2},
+
+%%%%%%%%%%
+\begin{equation}\label{eqn6.4}
+    \frac{f_k}{f_h}~=~\frac{\lambda_{h}g_k}{\lambda_{k}g_h}\frac{|\bra{3p~^{2}P_{\nicefrac{3}{2}}}\vec{r}\ket{3s~^{2}S_{\nicefrac{1}{2}}}|^{2}}{|\bra{3p~^{2}P_{\nicefrac{1}{2}}}\vec{r}\ket{3s~^{2}S_{\nicefrac{1}{2}}}|^{2}}
+\end{equation}
+%%%%%%%%%%
+
+Now the radial part of the states $3p~^{2}P_{\nicefrac{3}{2}}$ and $3p~^{2}P_{\nicefrac{3}{2}}$ would be same and cancel out. So, the ratio would depend on the angular part of the wavefunctions. The reduced matrix element for electric dipole transitions between fine-structure states is related to the LS-coupled reduced matrix element by the Wigner-Eckhart theorem:
+
+%%%%%%%%%%
+\begin{equation}
+    \bra{n'l'j'}r^{(1)}\ket{nlj}~=~(-1)^{l'+s+j+1}\sqrt{(2j'+1)(2j+1)}
+    \begin{Bmatrix}
+    l' & j' & s\\
+    j & l & 1
+    \end{Bmatrix} \bra{n'l'}r^{(1)}\ket{nl}
+\end{equation}
+%%%%%%%%%%
+
+\noindent where $\mathrm{r^{(1)}}$ is the radial part of the position vector operator. For \ion{Mg}{2} the relevant quantum numbers are:
+
+%%%%%%%%%%
+\begin{itemize}
+    \item l~=~0 (S state), l'~=~1 (P state)
+    \item s~=~1/2
+    \item j~=~1/2, j'~=~1/2 or 3/2
+\end{itemize}
+%%%%%%%%%%
+
+\noindent Evaluating the 6j symbols we get:
+
+%%%%%%%%%%%%
+\begin{itemize}
+    \item For j'~=~3/2: 
+        $\begin{Bmatrix}
+            1 & 3/2 & 1/2\\
+            1/2 & 0 & 1
+        \end{Bmatrix}$~=~$1/\sqrt{6}$
+
+    \item For j'~=~1/2:
+        $\begin{Bmatrix}
+            1 & 1/2 & 1/2\\
+            1/2 & 0 & 1
+        \end{Bmatrix}$~=~$-1/\sqrt{3}$
+\end{itemize}
+%%%%%%%%%%%%
+
+\noindent This gives us:
+
+%%%%%%%%%%%%
+\begin{equation}
+    \frac{|\bra{3p~^{2}P_{\nicefrac{3}{2}}}\vec{r}\ket{3s~^{2}S_{\nicefrac{1}{2}}}|^{2}}{|\bra{3p~^{2}P_{\nicefrac{1}{2}}}\vec{r}\ket{3s~^{2}S_{\nicefrac{1}{2}}}|^{2}}~=~\frac{4.\frac{1}{6}}{2.\frac{1}{3}}~=~1
+\end{equation}
+%%%%%%%%%%%%
+
+Plugging this back into eqn.~\ref{eqn6.4} we get,
+
+%%%%%%%%%%%%
+\begin{align*}
+    \frac{f_k}{f_h}~=~\frac{\lambda_h}{\lambda_k}\times \frac{g_k}{g_h}~=~\frac{2.\frac{3}{2}+1}{2.\frac{1}{2}+1}~=~\frac{4}{2}~=~2
+\end{align*}
+%%%%%%%%%%%%
+\noindent where $\frac{\lambda_h}{\lambda_k}~\simeq~1$.}
+
+
+\renewcommand{\thesection}{\thechapter.\arabic{section}}
+
+% \clearpage
+% \renewcommand{\thesection}{\arabic{section}} % Back to normal numbering
+% \setcounter{section}{0}

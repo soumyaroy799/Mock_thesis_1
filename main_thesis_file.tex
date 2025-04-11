@@ -4,7 +4,7 @@
 %EDITED SLIGHTLY AND UPLOADED TO OVERLEAF BY BEN COOK (bacook17@gmail.com)
 
 % use "plain" for committee to read, or for printing single-spaced in general
-\documentclass[keepsake]{hvdthesis}
+\documentclass[plain]{hvdthesis}
 
 % use "bound" for submitting to Harvard 
 %\documentclass[bound]{hvdthesis}
@@ -15,11 +15,12 @@
 % Put all required packages and setup in one file
 \input{setup}
 
+
 % Put all your useful macros, shortcuts, and commands in one file
 \input{mycommands}
 
-\author{Soumya Roy}
-\title{Dynamics of the Lower Solar Atmosphere}
+\author{Soumya Roy | {\lbng \*s*eoumYo ray}}
+\title{Solar Flares Across the Spectrum: Observations and Instrumentation}
 \department{Jawaharlal Nehru University, New Delhi, India}
 \subject{}
 \month{July}
@@ -29,7 +30,7 @@
 \begin{document}
 
 % include the dissertation acceptance form
-\includepdf[pages={1}]{placeholder_dac.pdf}
+% \includepdf[pages={1}]{placeholder_dac.pdf}
 
 \clearpage
 \thispagestyle{empty}
@@ -53,6 +54,9 @@ Page left intentionally blank.
 {\centerline {\em and you are the easiest person to fool."}}
 {\rightline {\em {--} Richard P. Feynman}}
 
+\newpage
+
+\includepdf[pages={1,2,3}]{placeholder_dac.pdf}
 \newpage
 	%% Abstract
 \input{abstract.tex}
@@ -125,7 +129,7 @@ Page left intentionally blank.
 \vspace*{\fill}
 {\centerline {\em Dedicated to everyone who pushed me one step at a time,}} 
 {\centerline {\em every time I was about to give up!}}
-{\centerline {\em And to my younger self, who was brave enogh to embark on this journey...}}
+{\centerline {\em And to my younger self, who was brave enough to embark on this journey...}}
 %\vskip 1.5cm
 %{\centerline {\em }}
 \vspace*{\fill}
@@ -144,62 +148,82 @@ Page left intentionally blank.
 %\bibliographyunit
 
 \chapter[Introduction]{Introduction}\label{c:intro}
-\input{./introduction/intro}
+\input{./introduction/intro_2}
 \clearpage
 %
 \chapter{Existing Solar Observations and Techniques: A bridge towards Solar Ultraviolet Imaging Telescope}\label{c:chap2}
 \chaptermark{Solar Observatories and Analysis Techniques}
-\input{./chapter2/ms.tex}
+\input{./chapter2/chap2_2}
 \clearpage
 %
-\chapter{Intital preparatory analysis for SUIT}\label{c:chap3}
-\chaptermark{SUIT preparatory analysis}
-\input{./chapter3/ms.tex}
+\chapter{Estimating thermal energy of two Solar Flares}\label{c:chap3}
+\chaptermark{Solar flare energy}
+%\begin{quote}
+%{\em ~~~~~~~This thesis chapter originally appeared in the literature as} \\
+%{authors,
+%{\em journal reference info}}
+%\end{quote}
+\input{./chapter3/chap3}
 \clearpage
-%
+
 \chapter{Forward modelling SUIT observations}\label{c:chap4}
 \chaptermark{SUIT forward model}
+%\begin{quote}
+%{\em ~~~~~~~This thesis chapter originally appeared in the literature as} 
+%{authors,
+%{\em journal reference info}}
+%\end{quote}
+\input{./chapter4/chap4}
+%
+\chapter{Intital preparatory analysis for SUIT}\label{c:chap5}
+
+\chaptermark{SUIT preparatory analysis}
 \begin{quote}
-{\em ~~~~~~~This thesis chapter originally appeared in the literature as} \\
-{authors,
-{\em journal reference info}}
+    { \em~~~~~~~This thesis chapter originally appeared in the literature as} \\
+{{\em {\bf Photometric calibration and spectral validation of
+the Solar Ultraviolet Imaging Telescope onboard
+Aditya-L1}, Sarkar, J., Roy, S., Ramaprakash, A.N., et. al.,  2025,  J. Astron. Telesc. Instrum. Syst. 11(1), 014005 (2025), doi:\href{https://www.spiedigitallibrary.org/journals/Journal-of-Astronomical-Telescopes-Instruments-and-Systems/volume-11/issue-1/014005/Photometric-calibration-and-spectral-validation-of-the-Solar-Ultraviolet-Imaging/10.1117/1.JATIS.11.1.014005.short}{10.1117/1.JATIS.11.1.014005}.}
 \end{quote}
-\input{./chapter4/ms.tex}
+\input{./chapter5/chap5}
+\clearpage
+%
 
 %
-\chapter{Effects of Solar flares on the local plasma environment from Mg II observations}\label{c:chap5}
+\chapter{Effects of Solar flares on the local plasma environment from Mg II observations}\label{c:chap6}
 \chaptermark{Solar flares Mg II}
 \begin{quote}
 { ~~~~~~~This thesis chapter originally appeared in the literature as} \\
-{{\em The Evolution of the Ratio of \ion{Mg}{2} Intensities During Solar Flares, Roy, S., \& Tripathi, D. 2024, ApJ, 964, 106, doi:\href{https://iopscience.iop.org/article/10.3847/1538-4357/ad2a46}{10.3847/1538-4357/ad2a46}}.}
+{{\em {\bf The Evolution of the Ratio of \ion{Mg}{2} Intensities During Solar Flares}, Roy, S., \& Tripathi, D. 2024, ApJ, 964, 106, doi:\href{https://iopscience.iop.org/article/10.3847/1538-4357/ad2a46}{10.3847/1538-4357/ad2a46}}.}
 \end{quote}
-\input{./chapter5/ms.tex}
-\clearpage
-%
-\chapter{Estimating thermal energy of two Solar Flares}\label{c:chap6}
-\chaptermark{Solar flare energy}
-\begin{quote}
-{\em ~~~~~~~This thesis chapter originally appeared in the literature as} \\
-{authors,
-{\em journal reference info}}
-\end{quote}
-\input{./chapter6/ms.tex}
+\input{./chapter6/chap6}
 \clearpage
 %
 \chapter{First flares observed by {\suit}}\label{c:chap7}
-\chaptermark{First Flares observed with SUIT}
-\begin{quote}
-{\em ~~~~~~~This thesis chapter originally appeared in the literature as} \\
-{authors,
-{\em journal reference info}}
-\end{quote}
-\input{./chapter7/ms.tex}
+\chaptermark{First flares}
+%\begin{quote}
+{\em ~~~~~~~This thesis chapter originally appeared in the literature as}\\ 
+{{\em {\bf Near- and Mid-ultraviolet Observations of X-6.3 Flare on 2024 February 22 Recorded by the Solar Ultraviolet Imaging Telescope on board Aditya-L1}, Roy, S., Tripathi, D., Padinhatteeri, S., \& Ramaprakash, A. N., et. al., 2024, ApJL, 981, L19, doi:\href{https://iopscience.iop.org/article/10.3847/2041-8213/adb0be}{10.3847/2041-8213/adb0be}}.}
+%{authors,
+%{\em journal reference info}}
+%\end{quote}
+\input{./chapter7/chap7_2}
 \clearpage
 %
-
+%
 \chapter{Echoes of the Solar Inferno: Summary and Future Prospects}\label{c:chap8}
-\chaptermark{Outlook}
-\input{./chapter8/ms.tex}
+\chaptermark{Summary \& Outlook}
+\input{./Outlook/outlook_2}
+\clearpage
+%
+\appendix
+\chapter{Calculation of Oscillator strengths for the Mg~\Romannum{2}~k~\&~h lines}\label{c:a1}
+\chaptermark{Oscilator Strength Calculation}
+\input{./Appendix1/a1}
+\clearpage
+
+\chapter{Modifications of the cold thick target model}\label{c:a2}
+\chaptermark{Kappa Distribution Fit}
+\input{./Appendix1/a2}
 \clearpage
 
 % I changed  thebibliography in hvdthesis.cls, so that it generates

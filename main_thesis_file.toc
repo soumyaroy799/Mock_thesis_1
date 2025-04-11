@@ -1,0 +1,85 @@
+\contentsline {chapter}{Abstract}{vi}{Doc-Start}%
+\contentsline {chapter}{List of Figures}{viii}{chapter*.1}%
+\contentsline {chapter}{List of Tables}{x}{chapter*.2}%
+\contentsline {chapter}{List of Abbreviations}{xiv}{chapter*.3}%
+\contentsline {chapter}{Acknowledgments}{xv}{chapter*.3}%
+\contentsline {chapter}{Dedication}{xviii}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The Sun}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}The Solar Interior}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}The Solar Atmosphere}{2}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}The Photosphere}{3}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}The Chromosphere}{4}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}The Transition Region}{5}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}The Corona}{5}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}Solar Flares}{5}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Brief history of flare observation}{6}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}``Standard'' model of solar flare}{7}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Motivation of the thesis: the energetics of solar flares}{9}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Outline of Thesis}{13}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Existing Solar Observations and Techniques: A bridge towards Solar Ultraviolet Imaging Telescope}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Solar Dynamics Observatory}{15}{section.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.0.1}Atmospheric Imaging Assembly (AIA)}{16}{subsubsection.2.1.0.1}%
+\contentsline {subsubsection}{\numberline {2.1.0.2}Helioseismic and Magnetic Imager (HMI)}{16}{subsubsection.2.1.0.2}%
+\contentsline {section}{\numberline {2.2}Interface Region Imaging Spectrograph (IRIS)}{16}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Spectrometer/Telescope for Imaging X-rays (STIX)}{17}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Extreme Ultraviolet Imager (EUVI)}{17}{section.2.4}%
+\contentsline {section}{\numberline {2.5}X-Ray Telescope (XRT)}{18}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Geostationary Operational Environmental Satellites (GOES)}{18}{section.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.0.1}X-Ray Sensor (XRS)}{19}{subsubsection.2.6.0.1}%
+\contentsline {subsubsection}{\numberline {2.6.0.2}Solar Ultraviolet Imager (SUVI)}{19}{subsubsection.2.6.0.2}%
+\contentsline {section}{\numberline {2.7}Techniques for Astrophysical Plasma Diagnostic}{19}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Differential Emission Measure and Thermal Properties of the Plasma}{19}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Doppler and Non-thermal Velocity from Spectra}{20}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.8}The solar Ultraviolet Imaging Telescope (SUIT)}{21}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}SUIT \& solar Flares}{21}{subsection.2.8.1}%
+\contentsline {chapter}{\numberline {3}Estimating thermal energy of two Solar Flares}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Observations and Data Analysis}{30}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}X flare on 28th October, 2021}{30}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}M flare on 29th November, 2020}{33}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Thermal Energy}{34}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}Determining the LOS}{35}{subsubsection.3.2.3.1}%
+\contentsline {subsection}{\numberline {3.2.4}Energy in the non-thermal electrons}{37}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Results}{40}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Summary and Discussion}{42}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Forward modelling SUIT observations}{45}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{45}{section.4.1}%
+\contentsline {section}{\numberline {4.2}The Instrument}{50}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Effective Area of SUIT}{50}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}The Point Spread Function (PSF) of {{\it {SUIT}}}}{53}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Forward Modeling SUIT intensity maps using MPS-ATLAS and MURaM}{53}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}{{\it {SUIT}}} filters forward modeled with MPS-ATLAS}{57}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}NB03 \& NB04}{57}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}NB05}{59}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Summary and Conclusions}{64}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Intital preparatory analysis for SUIT}{65}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{65}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Analysis of Spacecraft jitter simulation for {{\it {SUIT}}}}{67}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Throughput model of {{\it {SUIT}}}}{69}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Choice of Science filters for {{\it {SUIT}}}}{73}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Exposure Time Calculation}{74}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Filter Choice for BB2}{75}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Stellar Calibration of {{\it {SUIT}}}}{75}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Requirements of the calibration source}{78}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Exposure time for the calibration sources}{79}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Method for Calibration}{79}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Sirius A as calibration source}{81}{subsection.5.5.4}%
+\contentsline {section}{\numberline {5.6}Summary and Discussion}{82}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Effects of Solar flares on the local plasma environment from Mg II observations}{85}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{85}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Observations}{87}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Data analysis and results}{88}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}M3.7 Flare Observed on Nov 4, 2015}{88}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Investigating the dependence on the local magnetic field in the Mg$\tmspace +\thickmuskip {.2777em}${\small \rm II}\relax lines}{93}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}X1.6 Flare Observed on Oct 22, 2014}{95}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}C3.5 Flare Observed on Feb 03, 2015}{96}{subsection.6.3.4}%
+\contentsline {section}{\numberline {6.4}Summary and Discussion}{99}{section.6.4}%
+\contentsline {chapter}{\numberline {7}First flares observed by {{\it {SUIT}}}}{103}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{103}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Observations and Data}{104}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Data Analysis and results}{105}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Summary and Discussion}{108}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Echoes of the Solar Inferno: Summary and Future Prospects}{111}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Calculation of Oscillator strengths for the Mg\nobreakspace {}\Romannum {2}\nobreakspace {}k\nobreakspace {}\&\nobreakspace {}h lines}{115}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Modifications of the cold thick target model}{117}{appendix.B}%
